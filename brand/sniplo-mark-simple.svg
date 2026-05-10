@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-  <title>Sniplo Mark (Simplified)</title>
-  <g transform="translate(8 0)">
-    <path d="M60 22 H36 a42 42 0 0 0 0 84 H60 V78 H40 a10 10 0 0 1 0 -20 H60 Z" fill="#4F8CFF"/>
-    <path d="M68 22 H92 a42 42 0 0 1 0 84 H68 Z" fill="#7C5CFF"/>
-  </g>
-</svg>
