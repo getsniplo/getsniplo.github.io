@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+  <title>Sniplo Wordmark</title>
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+        .wordmark { font-family: "Plus Jakarta Sans", "Poppins", "Inter", system-ui, -apple-system, sans-serif; font-weight: 700; letter-spacing: -3px; }
+      ]]>
+    </style>
+  </defs>
+  <text x="20" y="105" class="wordmark" font-size="110" fill="#0F172A">Sniplo</text>
+</svg>
