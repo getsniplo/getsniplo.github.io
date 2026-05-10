@@ -28,8 +28,20 @@
         <input type="hidden" name="to_email" value="snaptypesupport@gmail.com">
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Send</button>button>
-      </form>form>
-
+            <button type="submit">Send</button
+      </form
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+                  const checkInterval = setInterval(function() {
+                            // Look for form elements that might be the contact form
+                            const forms = document.querySelectorAll('form:not(#contact-form)');
+                            forms.forEach(form => {
+                                        if (!form.dataset.web3FormsHandled) {
+                                                      // Find the submit button
+                                                      const submitBtn = form.querySelector('button[type="submit"]');
+                                                      if (submitBtn && submitBtn.textContent.includes('Send')) {
+                                                                      form.addEventListener('submit', async function(e) {
+                                                                                        e.preventDefault();
+    </script>
   </body>
 </html>
