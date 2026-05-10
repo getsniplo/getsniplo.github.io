@@ -30,18 +30,18 @@
             <textarea name="message" placeholder="Your message" required></textarea>
             <button type="submit">Send</button
       </form
-    <script>
-          document.addEventListener('DOMContentLoaded', function() {
-                  const checkInterval = setInterval(function() {
-                            // Look for form elements that might be the contact form
-                            const forms = document.querySelectorAll('form:not(#contact-form)');
-                            forms.forEach(form => {
-                                        if (!form.dataset.web3FormsHandled) {
-                                                      // Find the submit button
-                                                      const submitBtn = form.querySelector('button[type="submit"]');
-                                                      if (submitBtn && submitBtn.textContent.includes('Send')) {
-                                                                      form.addEventListener('submit', async function(e) {
-                                                                                        e.preventDefault();
-    </script>
+        <script>
+              // More robust Web3Forms integration for React contact form
+              document.addEventListener('DOMContentLoaded', function() {
+                      // Attach to submit buttons and forms dynamically
+                      const attachWeb3FormsHandler = () => {
+                                // Find all buttons that might be submit buttons
+                                document.querySelectorAll('button').forEach(button => {
+                                            // Look for buttons with "Send" text
+                                            if ((button.textContent.includes('Send') || button.type === 'submit') && !button.hasAttribute('data-web3forms-attached')) {
+                                                          button.addEventListener('click', async function(e) {
+                                                                          // Look for the closest form or parent form
+                                                                          const form = this.closest('form') || document.querySelector('form:not(#contact-form)');
+        </script>
   </body>
 </html>
