@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sniplo — Type Less. Do More.</title>
+  <meta name="description" content="Sniplo is a free Chrome extension that expands short text triggers into full snippets — anywhere you type on the web. Save hours of repetitive typing every week." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Sniplo — Type Less. Do More." />
+  <meta property="og:description" content="Sniplo is a free Chrome extension that expands short text triggers into full snippets — anywhere you type on the web." />
+  <meta property="og:url" content="https://getsniplo.github.io/" />
+  <link rel="canonical" href="https://getsniplo.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://getsniplo.github.io/opengraph.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sniplo — Type Less. Do More." />
+  <meta name="twitter:description" content="Free Chrome text expander. Type short triggers, get full snippets instantly." />
+  <meta name="twitter:image" content="https://getsniplo.github.io/opengraph.jpg" />
+  <link rel="icon" href="brand/sniplo-favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="brand/sniplo-favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="brand/sniplo-favicon-16.png" sizes="16x16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="28" height="28" />
+        <span>Sniplo</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="features.html">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm">Add to Chrome</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content fade-up">
+        <div class="badge">Free Chrome Extension</div>
+        <h1>Type Less.<br><span class="gradient-text">Do More.</span></h1>
+        <p class="hero-sub">The lightning-fast, privacy-first text expander for Chrome. Turn your most-used phrases into short triggers and reclaim hours of your day.</p>
+        <div class="hero-cta">
+          <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><circle cx="12" cy="12" r="4"/></svg>
+            Add to Chrome — It's Free
+          </a>
+          <a href="features.html" class="btn btn-outline btn-lg">See how it works</a>
+        </div>
+      </div>
+
+      <!-- Demo card -->
+      <div class="demo-card fade-up" style="animation-delay:.15s">
+        <div class="demo-header">
+          <div class="demo-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="demo-title">Gmail — Compose</span>
+        </div>
+        <div class="demo-body">
+          <div class="demo-typing" id="demo-typing"></div>
+          <div class="demo-expanded" id="demo-expanded" style="display:none"></div>
+        </div>
+        <div class="demo-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Sniplo expanded instantly
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to automate your typing</h2>
+        <p>Packed into a lightweight browser extension.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Instant Expansion</h3>
+          <p>Type a short abbreviation and watch it instantly transform into a full snippet of text anywhere you type.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.05s">
+          <div class="feature-icon secondary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Inline Search</h3>
+          <p>Can't remember a trigger? Type // anywhere to instantly bring up the inline search menu and find what you need.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.1s">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <h3>Smart Variables</h3>
+          <p>Inject dynamic content using macros like {date}, {clipboard}, {url}, and {title} into your expanded snippets.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.15s">
+          <div class="feature-icon secondary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Smart Fill</h3>
+          <p>Map CSS selectors to autofill complex forms across specific websites automatically.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.2s">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Categories & Folders</h3>
+          <p>Keep your snippets organized. Group related text expansions together for different projects or clients.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.25s">
+          <div class="feature-icon secondary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Cloud Sync (Opt-in)</h3>
+          <p>Create an account to securely sync your snippets across multiple devices and browsers.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.3s">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Usage Insights</h3>
+          <p>Track your productivity. See how many keystrokes and hours you've saved using Sniplo.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.35s">
+          <div class="feature-icon secondary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"/></svg>
+          </div>
+          <h3>Import & Export</h3>
+          <p>Easily bring your existing snippets from TextExpander, Alfred, or JSON, and back them up anytime.</p>
+        </div>
+        <div class="feature-card fade-up" style="animation-delay:.4s">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Keyboard Shortcuts</h3>
+          <p>Navigate entirely without a mouse. Use Alt+S to quickly open Sniplo wherever you are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMART VARIABLES SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-content fade-up">
+          <h2>Smart variables make your snippets dynamic.</h2>
+          <p class="text-muted">Don't just paste static text. Sniplo can inject the current date, clipboard contents, or page URL directly into your expanded snippets.</p>
+          <ul class="check-list">
+            <li>
+              <span class="check-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <div><strong>{date}</strong> — Today's date in any format</div>
+            </li>
+            <li>
+              <span class="check-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <div><strong>{clipboard}</strong> — Whatever's on your clipboard</div>
+            </li>
+            <li>
+              <span class="check-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <div><strong>{url}</strong> — The current page's URL</div>
+            </li>
+            <li>
+              <span class="check-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <div><strong>{title}</strong> — The current page's title</div>
+            </li>
+          </ul>
+          <a href="features.html" class="btn btn-link">Explore all features →</a>
+        </div>
+        <div class="split-visual fade-up" style="animation-delay:.15s">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="code-lang">Snippet editor</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line"><span class="code-label">Trigger</span><code class="code-trigger">tyvm</code></div>
+              <div class="code-line"><span class="code-label">Expands to</span></div>
+              <div class="code-expansion">
+Hi {name},<br><br>
+Thanks so much for reaching out on <span class="code-var">{date}</span>.<br><br>
+I'll follow up at <span class="code-var">{url}</span> shortly.<br><br>
+Best,<br>
+Your Name
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built with privacy at its core.</h2>
+        <p>Your data belongs to you — not us.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-card fade-up">
+          <div class="privacy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Local by Default</h3>
+          <p>Your snippets stay on your device unless you choose to turn on cloud sync.</p>
+        </div>
+        <div class="privacy-card fade-up" style="animation-delay:.08s">
+          <div class="privacy-icon secondary">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>No Keystroke Logging</h3>
+          <p>We never read the pages you visit or log your keystrokes outside of triggers.</p>
+        </div>
+        <div class="privacy-card fade-up" style="animation-delay:.16s">
+          <div class="privacy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3>No Ads. Ever.</h3>
+          <p>We never sell your data and we never show you adverts. Full stop.</p>
+        </div>
+        <div class="privacy-card fade-up" style="animation-delay:.24s">
+          <div class="privacy-icon secondary">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3>Opt-in Sync</h3>
+          <p>Cloud sync is optional. If you sign in, your snippets are securely sent to our servers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-box fade-up">
+        <h2>Ready to type less and do more?</h2>
+        <p>Join thousands of professionals who've reclaimed hours of their week with Sniplo.</p>
+        <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer" class="btn btn-primary btn-lg">
+          Add to Chrome — It's Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="24" height="24" />
+            <span>Sniplo</span>
+          </a>
+          <p>Type less. Do more. The privacy-first text expander for professionals who value their time.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer">Chrome Web Store</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sniplo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

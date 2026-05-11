@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Sniplo</title>
+  <meta name="description" content="Sniplo privacy policy. We believe your data belongs to you." />
+  <link rel="icon" href="brand/sniplo-favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="brand/sniplo-favicon-32.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="28" height="28" />
+        <span>Sniplo</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="features.html">Features</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm">Add to Chrome</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-up">
+        <h1>Privacy Policy</h1>
+        <p>We believe your data belongs to you. Here's exactly what we collect — and what we don't.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY TLDR -->
+  <section class="section">
+    <div class="container">
+      <div class="privacy-summary fade-up">
+        <h2 id="tldr">The short version</h2>
+        <ul>
+          <li>Your snippets stay on your device by default. Everything is stored in <code>chrome.storage.local</code> unless you choose to turn on cloud sync.</li>
+          <li>We never read the pages you visit. Sniplo only interacts with a text field when you type a trigger shortcut.</li>
+          <li>We never sell your data and we never show you adverts.</li>
+          <li>Cloud sync is optional and opt-in. If you sign in, your snippets are sent to our servers so you can access them across browsers and devices.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL POLICY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="prose fade-up">
+
+        <h2 id="who-we-are">1. Who we are</h2>
+        <p>Sniplo is a Chrome browser extension. Contact: <a href="mailto:snaptypesupport@gmail.com">snaptypesupport@gmail.com</a></p>
+
+        <h2 id="data-stored-locally">2. Data stored locally</h2>
+        <p>The following data is stored locally on your device:</p>
+        <ul>
+          <li>Snippets (triggers + expansion text)</li>
+          <li>Categories</li>
+          <li>Usage statistics (Insights tab — never sent to us unless sync is on)</li>
+          <li>Settings</li>
+        </ul>
+
+        <h2 id="data-we-never-collect">3. Data we never collect</h2>
+        <p>We never access or store:</p>
+        <ul>
+          <li>Page content</li>
+          <li>Form fields</li>
+          <li>Browsing history</li>
+          <li>Keystrokes outside trigger sequences</li>
+        </ul>
+
+        <h2 id="how-sniplo-works">4. How Sniplo detects triggers</h2>
+        <p>Sniplo listens for keystrokes only within focused text inputs on web pages. When you type a character, Sniplo checks if the last N characters match any of your saved triggers. It reads only the minimum characters needed to match triggers and immediately discards them. Your keystrokes are never transmitted anywhere.</p>
+
+        <h2 id="cloud-sync">5. Cloud sync data (opt-in only)</h2>
+        <p>If you choose to create an account and enable sync, we store the following on our servers (Supabase):</p>
+        <ul>
+          <li>Your email address</li>
+          <li>Your snippets and categories</li>
+          <li>Your settings</li>
+        </ul>
+        <p>We do not store usage statistics even when sync is enabled, unless you explicitly enable that option.</p>
+
+        <h2 id="security">6. Security</h2>
+        <p>HTTPS/TLS. Supabase RLS. Anon key is publishable. Session tokens sandboxed to extension.</p>
+
+        <h2 id="third-parties">7. Third parties</h2>
+        <p>We use Supabase for optional cloud sync. No other third-party data processors receive your data.</p>
+
+        <h2 id="your-rights">8. Your rights</h2>
+        <p>You can delete your account and all associated data at any time from the extension settings. Local data can be cleared by uninstalling the extension.</p>
+
+        <h2 id="cookies">9. Cookies</h2>
+        <p>The extension itself uses no cookies. Our website uses no tracking cookies.</p>
+
+        <h2 id="children">10. Children</h2>
+        <p>Sniplo is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+        <h2 id="contact">11. Contact</h2>
+        <p>Questions? Email us at <a href="mailto:snaptypesupport@gmail.com">snaptypesupport@gmail.com</a></p>
+
+        <h2 id="changes">12. Changes</h2>
+        <p>We will update the "last updated" date and notify signed-in users of any material changes to this policy.</p>
+
+        <p class="text-muted" style="margin-top:2rem;font-size:.875rem;">Last updated: May 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="24" height="24" />
+            <span>Sniplo</span>
+          </a>
+          <p>Type less. Do more. The privacy-first text expander for professionals who value their time.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer">Chrome Web Store</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sniplo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

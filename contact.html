@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sniplo</title>
+  <meta name="description" content="Get in touch with the Sniplo team. Questions, bug reports, or feature requests welcome." />
+  <link rel="icon" href="brand/sniplo-favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="brand/sniplo-favicon-32.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="28" height="28" />
+        <span>Sniplo</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="features.html">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm">Add to Chrome</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content fade-up">
+        <h1>Contact Us</h1>
+        <p>Have a question, feature request, or found a bug? We'd love to hear from you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-form-wrap fade-up">
+          <div class="contact-card" id="contact-card">
+            <form id="contact-form" action="https://formspree.io/f/snaptypesupport" method="POST" novalidate>
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a topic...</option>
+                  <option value="bug">Bug report</option>
+                  <option value="feature">Feature request</option>
+                  <option value="question">General question</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
+              <p class="form-note">We typically respond within 24 hours on weekdays.</p>
+            </form>
+          </div>
+          <div class="contact-success" id="contact-success" style="display:none">
+            <div class="success-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Message sent!</h3>
+            <p>Thanks for getting in touch. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+
+        <div class="contact-info fade-up" style="animation-delay:.15s">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email us directly</h4>
+              <a href="mailto:snaptypesupport@gmail.com">snaptypesupport@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon secondary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Response time</h4>
+              <p>Within 24 hours on weekdays</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <div>
+              <h4>Chrome Web Store</h4>
+              <a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer">Leave a review or report a bug</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="brand/sniplo-icon-32.png" alt="Sniplo" width="24" height="24" />
+            <span>Sniplo</span>
+          </a>
+          <p>Type less. Do more. The privacy-first text expander for professionals who value their time.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/sniplo-%E2%80%93-text-expander/pjiocjklennneaiihcacakicpphhggoo?authuser=0&hl=en" target="_blank" rel="noreferrer">Chrome Web Store</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sniplo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
